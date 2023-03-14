@@ -1,6 +1,4 @@
-#json-btn {
-  background-color: black;
-}
+/* Main CSS. */
 
 .card-title {
   display: flex;
@@ -55,36 +53,7 @@
   margin-top: 28px;
 }
 
-.navbar {
-  background-color: black;
-  height: 100px;
-}
-
-.navbar-brand {
-  font-family: cursive;
-  font-size: 36px;
-  margin-left: 16px;
-}
-
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-nav > li {
-  margin-right: 16px;
-  margin-left: 24px;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px; 
-  background-color: #343a40; 
-  color: white; 
-}
+/* About CSS. */
 
 .header-about {
   display: flex;
@@ -125,6 +94,41 @@
   font-size: 20px;
   margin-top: 28px;
 }
+
+/* Navbar and footer CSS. */
+
+.navbar {
+  background-color: black;
+  height: 100px;
+}
+
+.navbar-brand {
+  font-family: cursive;
+  font-size: 36px;
+  margin-left: 16px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-nav > li {
+  margin-right: 16px;
+  margin-left: 24px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; 
+  background-color: #343a40; 
+  color: white; 
+}
+
+/* AJAX and JSON CSS. */
 
 #json-btn {
   background-color: black;
