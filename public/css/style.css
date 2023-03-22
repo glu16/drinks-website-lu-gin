@@ -21,7 +21,8 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/cocktails.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/cocktails.jpeg");
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -31,7 +32,8 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.header h1, .header p {
+.header h1,
+.header p {
   position: relative;
   display: block;
   text-align: center;
@@ -59,7 +61,8 @@
   display: flex;
   height: 120vh;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/strawberry.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/strawberry.jpeg");
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -69,7 +72,8 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.header-about h1, .header p {
+.header-about h1,
+.header p {
   position: relative;
   display: block;
   text-align: center;
@@ -123,9 +127,9 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; 
-  background-color: #343a40; 
-  color: white; 
+  height: 60px;
+  background-color: #343a40;
+  color: white;
 }
 
 /* AJAX and JSON CSS. */
@@ -145,7 +149,8 @@ table {
   width: 100%;
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   text-align: left;
 }
@@ -160,3 +165,59 @@ td {
   border: 1px solid #dddddd;
 }
 
+@media screen and (min-width: 2000px) {
+  .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/img/cocktails.jpeg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .header h1,
+  .header p {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+
+  .header h1::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 500px;
+    background-color: white;
+  }
+
+  .description {
+    font-size: 20px;
+    margin-top: 28px;
+  }
+}
