@@ -110,6 +110,7 @@
   font-family: cursive;
   font-size: 36px;
   margin-left: 16px;
+  margin-right: 28px;
 }
 
 .navbar-nav {
@@ -118,9 +119,9 @@
   justify-content: center;
 }
 
-.navbar-nav > li {
+.navbar-content {
   margin-right: 16px;
-  margin-left: 24px;
+  margin-left: 16px;
 }
 
 .footer {
@@ -164,6 +165,13 @@ th {
 td {
   border: 1px solid #dddddd;
 }
+
+h3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Media Queries. */
 
 @media screen and (min-width: 2000px) {
   .card-title {
