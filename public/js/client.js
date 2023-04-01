@@ -83,48 +83,6 @@ ready(function () {
       })
       .catch((error) => console.error(error));
   }
-
-  // Creating JSON list to display drinks.js
-  const listBtn = document.getElementById("list-btn");
-  const drinkList = document.getElementById("drink-list");
-
-  listBtn.addEventListener("click", displayDrinkList);
-
-  function displayDrinkList() {
-    listBtn.style.display = "none";
-    fetch("/drinks?format=json")
-      .then((response) => response.json())
-      .then((data) => {
-        const ul = document.createElement("ul");
-        drinkList.appendChild(ul);
-
-        data.forEach((item) => {
-          const li = document.createElement("li");
-          const h3 = document.createElement("h3");
-          const p1 = document.createElement("p");
-          const p2 = document.createElement("p");
-          const p3 = document.createElement("p");
-          const a = document.createElement("a");
-
-          h3.textContent = item.title;
-          p1.textContent = item.description;
-          p2.textContent = `Prep Time: ${item["prep time"]}`;
-          p3.textContent = `Source: ${item.source}`;
-          a.href = item.link;
-          a.target = "_blank";
-          a.textContent = "View Recipe";
-
-          li.appendChild(h3);
-          li.appendChild(p1);
-          li.appendChild(p2);
-          li.appendChild(p3);
-          li.appendChild(a);
-
-          ul.appendChild(li);
-        });
-      })
-      .catch((error) => console.error(error));
-  }
 });
 
 // Callback function declaration
